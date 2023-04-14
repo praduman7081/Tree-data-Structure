@@ -1,6 +1,9 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+// O(N)
+// S(N)
+
 class Tree
 {
 public:
@@ -15,7 +18,9 @@ public:
 };
 
 void bfs(Tree *root, vector<vector<int>> &vec)
-{
+{   if(root == NULL){
+      return;
+   }
     queue<Tree *> q;
     q.push(root);
     while (!q.empty())
