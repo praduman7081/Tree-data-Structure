@@ -20,7 +20,7 @@ class Tree {
 
 int height(Tree* root,int &maxi){
     if(root== NULL){
-        return 0;
+        return ;
     }
         int lh = height(root->left,maxi);
         int rh = height(root->right,maxi);
